@@ -1,0 +1,17 @@
+name: PurpleTags
+main: org.purple.purpleTags.PurpleTags
+version: "1.0-SNAPSHOT"
+api-version: "1.21"
+description: Plugin para gerenciamento de tags customizadas.
+
+commands:
+  tags:
+    description: Gerenciar tags personalizadas (create, list, delete, set, clear).
+    usage: /<command> <create|list|delete|set|clear> [...]
+    permission: purpletags.use
+    permission-message: "§cVocê precisa ser OP para usar este comando."
+
+permissions:
+  purpletags.use:
+    description: Permite usar todos os comandos de tags
+    default: op
